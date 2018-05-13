@@ -16,40 +16,24 @@ Step4:- you can access using http://localhost/sweet-alert/student-record
 
 Step1:- Copy 2018_05_13_110316_student file in database\migrations folder and paste in your database\migrations folder 
 
-Step2:- Copy all code of DatabaseSeeder file in database\seeds folder and paste in your DatabaseSeeder file in database\seeds folder
+Step2:- Copy Student Model in app folder and paste in your app folder
 
-Step3:- Run command on terminal php artisan migrate
+Step3:- Copy all code of DatabaseSeeder file in database\seeds folder and paste in your DatabaseSeeder file in database\seeds folder
 
-Step4:- Run command on terminal php artisan db:seed
+Step4:- Run command on terminal php artisan migrate
 
-Step5:- Copy Route which is given below and paste in your web.php file
+Step5:- Run command on terminal php artisan db:seed
 
+Step6:- Copy Routes which is given below and paste in your web.php file
+
+```
 Route::get('/student-record', 'StudentController@getStudentRecord');
 Route::get('/delete-student/{id}', 'StudentController@deleteStudentRecord');
-
-Step6:- Run command on terminal php artisan make:controller StudentController
-
-Step7:- Define use App\Student; in StudentController
-
-Step8:- Write code inside StudentController class of StudentController which is given below
-```
-public function __construct()
-{
-    $this->middleware('auth');
-}
-function getStudentRecord(){
-    $data=Student::select('id','name','roll_no','class')->get();
-    return view('student_record')->with(['data'=>$data]);
-}
-function deleteStudentRecord($id){
-    Student::where('id',$id)->delete();
-}
 ```
 
-Step9:- Copy student_record.blade file in resources\views folder and paste in your resources\views folder
+Step7:- Copy StudentController in app\Http\Controllers folder and paste in your app\Http\Controllers folder
 
-Step10:- Copy Student Model in app folder and paste in your app folder
-
+Step8:- Copy student_record.blade file in resources\views folder and paste in your resources\views folder
 ```
-Step11:- You can access using http://localhost/sweet-alert/student-record
+Step9:- You can access using http://localhost/sweet-alert/student-record
 ```
