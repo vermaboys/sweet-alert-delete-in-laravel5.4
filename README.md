@@ -48,6 +48,8 @@ function deleteStudentRecord($id){
 
 Step9:- Copy student_record.blade file in resources\views folder and paste in your resources\views folder
 
+Step10:- Copy Student Model in app folder and paste in your app folder
+
 ```
 Step10:- You can access using http://localhost/sweet-alert/student-record
 ```
