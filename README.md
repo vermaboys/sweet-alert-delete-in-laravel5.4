@@ -8,8 +8,9 @@ Step2:- Run command on terminal php artisan migrate
 
 Step3:- Run command on terminal php artisan db:seed
 
+```
 Step4:- you can access using http://localhost/sweet-alert/student-record
-
+```
 
 ## You can also write code of sweet alert delete using following steps:-
 
@@ -49,4 +50,6 @@ Step9:- Copy student_record.blade file in resources\views folder and paste in yo
 
 Step10:- Copy Student Model in app folder and paste in your app folder
 
+```
 Step11:- You can access using http://localhost/sweet-alert/student-record
+```
